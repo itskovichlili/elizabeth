@@ -24,7 +24,7 @@ package prime;
 public class Primes {
     public static boolean isPrime(int n) {
         boolean ans = true;
-        for (int i = 2; ans && i <= n - 1; i++) {
+        for (int i = 2; ans && i <= Math.sqrt(n); i++) {
             if (n % i == 0) ans = false;
         }
         return ans;
