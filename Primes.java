@@ -24,11 +24,13 @@ package prime;
 public class Primes {
     public static boolean isPrime(int n) {
         boolean ans = true;
-		if (n==2 || n== 3) ans = true;
-        for (int i = 2; ans && i <= Math.sqrt(n); i++) {
+        if (n==2 || n==3 || n==5 || n==7) return true;
+        if (n%2==0)  return false;
+        for (int i=3; ans && i<=Math.sqrt(n); i=i+2) {
             if (n % i == 0) ans = false;
         }
         return ans;
+
     }
 }
 >>>>>>> 2410562 (Initial commit)
