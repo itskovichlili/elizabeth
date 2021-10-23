@@ -23,6 +23,7 @@ package prime;
 
 public class Primes {
     public static boolean isPrime(int n) {
+		// check if n is a prime number
         boolean ans = true;
         if (n==2) return true;
         if (n%2==0)  return false;
