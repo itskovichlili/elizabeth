@@ -31,5 +31,5 @@ public class PrimeTest {
     @Test
     public  void test10() {assertFalse(Primes.isPrime(10));}
     @Test
-    public  void test10() {assertTrue(Primes.isPrime(1000003));}
+    public  void test11() {assertTrue(Primes.isPrime(1000003));}
 }
