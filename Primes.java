@@ -5,7 +5,6 @@ public class Primes {
     public static boolean isPrime(int n) {
 		// check if n is a prime number;
 		// check only odd numbers for good performance
-		// go to sqrt(n)
         boolean ans = true;
         if (n==2) return true;
         if (n%2==0)  return false;
