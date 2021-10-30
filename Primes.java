@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package prime;
 
 public class Primes {
@@ -17,3 +18,16 @@ public class Primes {
 }
 "" 
 "more text" 
+=======
+package prime;
+
+public class Primes {
+    public static boolean isPrime(int n) {
+        boolean ans = true;
+        for (int i = 2; ans && i <= n - 1; i++) {
+            if (n % i == 0) ans = false;
+        }
+        return ans;
+    }
+}
+>>>>>>> 2410562 (Initial commit)
